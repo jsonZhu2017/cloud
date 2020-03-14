@@ -1,5 +1,6 @@
 package com.cn.controller;
 
+import com.cn.service.CInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
@@ -14,6 +15,9 @@ public class CController {
     @Autowired
     private DiscoveryClient client;
 
+    @Autowired
+    private CInterface cInterface;
+
     @GetMapping(value = "/serverName")
     public String serverName(){
         List<String> services = client.getServices();
@@ -24,7 +28,8 @@ public class CController {
                 System.out.println(serviceInstance.getHost()+":"+serviceInstance.getPort()+"-"+serviceInstance.getServiceId());
             }
         }
-
-        return "server9002";
+        String serviceName = cInterface.serverName();
+        // return "server9002";
+        return serviceName;
     }
 }

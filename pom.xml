@@ -20,6 +20,7 @@
         <module>client9001</module>
         <module>client9002</module>
         <module>client9003</module>
+        <module>client9002api</module>
     </modules>
 
     <dependencies>

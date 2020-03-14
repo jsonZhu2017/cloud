@@ -11,6 +11,7 @@
         <module name="client8003" />
         <module name="client9001" />
         <module name="client9002" />
+        <module name="client9002api" />
         <module name="client9003" />
         <module name="server7001" />
         <module name="server7002" />
@@ -23,6 +24,7 @@
       <module name="client8003" target="1.8" />
       <module name="client9001" target="1.8" />
       <module name="client9002" target="1.8" />
+      <module name="client9002api" target="1.8" />
       <module name="client9003" target="1.8" />
       <module name="cloud" target="1.8" />
       <module name="server7001" target="1.8" />
