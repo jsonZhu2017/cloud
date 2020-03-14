@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: A #待定
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**  #页面不加载缓存，修改即时生效
+  freemarker:
+    cache: false
+
+server:
+  port: 7001 #项目的端口号
+  servlet:
+    context-path: /server7001  #配置项目的contextPath
+
+eureka:
+  instance:
+    appname: a
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 0
+
+
+
