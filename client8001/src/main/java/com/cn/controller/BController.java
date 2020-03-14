@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-public class AController {
+public class BController {
 
     @Autowired
     private DiscoveryClient client;
@@ -24,6 +24,7 @@ public class AController {
                 System.out.println(serviceInstance.getHost()+":"+serviceInstance.getPort()+"-"+serviceInstance.getServiceId());
             }
         }
-        return "server7001";
+
+        return "client8001";
     }
 }

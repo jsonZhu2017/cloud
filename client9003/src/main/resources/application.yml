@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: C #待定
+  devtools:
+    restart:
+      enabled: true  #设置开启热部署
+      additional-paths: src/main/java #重启目录
+      exclude: WEB-INF/**  #页面不加载缓存，修改即时生效
+  freemarker:
+    cache: false
+
+server:
+  port: 9003
+  servlet:
+    context-path: /client9000  #配置项目的contextPath
+eureka:
+  instance:
+    appname: clientC
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/server7000/eureka/,http://localhost:7002/server7000/eureka/,http://localhost:7003/server7000/eureka/

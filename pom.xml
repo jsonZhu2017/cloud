@@ -12,6 +12,14 @@
     <!--subModels-->
     <modules>
         <module>server7001</module>
+        <module>server7002</module>
+        <module>server7003</module>
+        <module>client8001</module>
+        <module>client8002</module>
+        <module>client8003</module>
+        <module>client9001</module>
+        <module>client9002</module>
+        <module>client9003</module>
     </modules>
 
     <dependencies>

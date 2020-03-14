@@ -5,14 +5,18 @@ import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
 @RestController
-public class AController {
+public class CController {
 
     @Autowired
     private DiscoveryClient client;
+
+    @Autowired
+    RestTemplate restTemplate;
 
     @GetMapping(value = "/serverName")
     public String serverName(){
@@ -24,6 +28,10 @@ public class AController {
                 System.out.println(serviceInstance.getHost()+":"+serviceInstance.getPort()+"-"+serviceInstance.getServiceId());
             }
         }
-        return "server7001";
+
+
+        String serverName = restTemplate.getForObject("http://B/client8000/serverName",String.class);
+        //return "server9001";
+        return serverName;
     }
 }

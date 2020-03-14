@@ -6,12 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="client8001" />
+        <module name="client8002" />
+        <module name="client8003" />
+        <module name="client9001" />
+        <module name="client9002" />
+        <module name="client9003" />
         <module name="server7001" />
+        <module name="server7002" />
+        <module name="server7003" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="client8001" target="1.8" />
+      <module name="client8002" target="1.8" />
+      <module name="client8003" target="1.8" />
+      <module name="client9001" target="1.8" />
+      <module name="client9002" target="1.8" />
+      <module name="client9003" target="1.8" />
       <module name="cloud" target="1.8" />
       <module name="server7001" target="1.8" />
+      <module name="server7002" target="1.8" />
+      <module name="server7003" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

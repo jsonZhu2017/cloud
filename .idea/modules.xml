@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/client8001/client8001.iml" filepath="$PROJECT_DIR$/client8001/client8001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client8002/client8002.iml" filepath="$PROJECT_DIR$/client8002/client8002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client8003/client8003.iml" filepath="$PROJECT_DIR$/client8003/client8003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client9001/client9001.iml" filepath="$PROJECT_DIR$/client9001/client9001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client9002/client9002.iml" filepath="$PROJECT_DIR$/client9002/client9002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client9003/client9003.iml" filepath="$PROJECT_DIR$/client9003/client9003.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client9004/client9004.iml" filepath="$PROJECT_DIR$/client9004/client9004.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/cloud.iml" filepath="$PROJECT_DIR$/.idea/cloud.iml" />
       <module fileurl="file://$PROJECT_DIR$/server7001/server7001.iml" filepath="$PROJECT_DIR$/server7001/server7001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server7002/server7002.iml" filepath="$PROJECT_DIR$/server7002/server7002.iml" />
+      <module fileurl="file://$PROJECT_DIR$/server7003/server7003.iml" filepath="$PROJECT_DIR$/server7003/server7003.iml" />
     </modules>
   </component>
 </project>

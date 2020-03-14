@@ -10,7 +10,7 @@ spring:
     cache: false
 
 server:
-  port: 7001 #项目的端口号
+  port: 7003 #项目的端口号
   servlet:
     context-path: /server7000  #配置项目的contextPath
 
@@ -22,7 +22,7 @@ eureka:
     #registerWithEureka: false
     #fetchRegistry: false
     service-url:
-      defaultZone: http://${eureka.instance.hostname}:7002/${server.servlet.context-path}/eureka/,http://${eureka.instance.hostname}:7003/${server.servlet.context-path}/eureka/
+      defaultZone: http://${eureka.instance.hostname}:7001/${server.servlet.context-path}/eureka/,http://${eureka.instance.hostname}:7002/${server.servlet.context-path}/eureka/
   server:
     waitTimeInMsWhenSyncEmpty: 0
 
